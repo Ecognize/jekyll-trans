@@ -1,0 +1,24 @@
+<!-- TODO:
+- pls make it comme il faut
+- additionally let's support JavaScript set cookies
+- need to display a notice about them tho -->
+<html>
+<script>
+// Check if we support browser's preferred language
+var language = window.navigator.userLanguage || window.navigator.language;
+switch (language.substr(0,2)) {
+  {% for l in site.t %}
+  case "{{ l[0] }}":
+  {% endfor %}
+    language = "/"+language.substr(0,2);
+    break;
+  default:
+    language = "/en";
+    break;
+}
+// Redirect to respective version
+document.location.href = language;
+</script>
+<!-- Paranoidal users get English language  -->
+<meta http-equiv="refresh" content="0; url="/en"/>
+</html>

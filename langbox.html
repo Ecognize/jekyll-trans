@@ -1,0 +1,7 @@
+<!--@lyssdod style this pls -->
+<!--Language Icon by A’ Design Award & Competition, Onur Müştak Çobanlı and Farhat Datta-->
+<!--http://www.languageicon.org -->
+<img height=24 src="/img/language_switch.svg"/>
+<select onchange="document.location.href = '/' + this.value">{% for l in site.t %}
+    <option value="{{ l[0] }}"{% if page.lang == l[0] %} selected{% endif %}>{{ l[1].lang }}</option>{% endfor %}
+</select>
