@@ -7,9 +7,7 @@
 // Check if we support browser's preferred language
 var language = window.navigator.userLanguage || window.navigator.language;
 switch (language.substr(0,2)) {
-  {% for l in site.t %}
-  case "{{ l[0] }}":
-  {% endfor %}
+  {% for l in site.t %}case "{{ l[0] }}":{% endfor %}
     language = "/"+language.substr(0,2);
     break;
   default:
