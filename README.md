@@ -35,5 +35,9 @@ t:
     key2:          'value2'
 ```
 9. Key `lang` is assumed to be the language's name in itself, for the purposes of the language selection UI.
+10. For UI JavaScript include `langbox_js.html` from somewhere relevant, e.g. `{% include jekyll-trans/langbox_js.html %}` from your `scripts.html` include.
+11. Provide the EU cookie directive translations at: `t.lang.cookie_banner`.
 
-TODO: blog setup i.e. links to page's translation
+TODO:
+- blog setup i.e. links to page's translation
+- make cookie thing optional
