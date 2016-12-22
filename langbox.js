@@ -4,7 +4,7 @@
 var cookieBanners = {};
 
 {% for l in site.t %}
-cookieBanners.{{ l[0] }} = "{{ l[1].cookie_banner }}";
+cookieBanners.{{ l[0] }} = '{{ l[1].cookie_banner }}';
 {% endfor %}
 
 (function() {
