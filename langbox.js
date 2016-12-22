@@ -1,4 +1,3 @@
-<script language="javascript">
 // We assume the user who switches the language doesn't know the current one,
 // so we need to have all the translations of cookie notice at hand.
 var cookieBanners = {};
@@ -45,4 +44,3 @@ function switchJekyllLanguage(lang) {
   }
   document.location.href = '/' + lang
 }
-</script>

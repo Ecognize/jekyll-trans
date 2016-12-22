@@ -1,0 +1,13 @@
+.langbar {
+	height: 24px;
+	line-height: 24px;
+}
+
+.langbar img {
+	height: inherit;
+	width: auto;
+}
+
+.langbar select > option {
+	color: #000;
+}
