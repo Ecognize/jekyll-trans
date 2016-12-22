@@ -8,6 +8,6 @@
 	width: auto;
 }
 
-.langbar select > option {
+.langbar select {
 	color: #000;
 }
