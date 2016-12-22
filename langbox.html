@@ -3,7 +3,7 @@
 
 <div class = 'langbar'>
 	<img src = '/img/language_switch.svg' />
-	<select onchange = 'switchJekyllLanguage(this.value);'>
+	<select id = 'languagebox'>
 		{% for l in site.t %}
     	<option value = '{{ l[0] }}'{% if page.lang == l[0] %} selected{% endif %}>{{ l[1].lang }}</option>
     	{% endfor %}
